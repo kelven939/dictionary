@@ -1,12 +1,13 @@
 // Acessar o elemento <div> onde o dicionário será exibido
 var dictionaryElement = document.getElementById("dictionary");
 
-// Acessar o botão "Escrever de Novo"
-var btnNewWord = document.getElementById("btnNewWord");
+// Acessar o input de texto e o botão
+var wordInput = document.getElementById("word");
+var btnSearch = document.getElementById("btnSearch");
 
 // Função para fazer uma solicitação à API e exibir os resultados no dicionário
 function getDictionaryData() {
-    var word = prompt("Digite uma palavra:"); // Solicita ao usuário uma palavra a ser pesquisada
+    var word = wordInput.value; // Obter a palavra digitada pelo usuário
 
     // Realizar uma solicitação GET à API do Big Huge Thesaurus
     fetch("https://api.datamuse.com/words?ml=" + word)
@@ -40,8 +41,8 @@ function getDictionaryData() {
         });
 }
 
-// Adicionar evento de clique ao botão "Escrever de Novo"
-btnNewWord.addEventListener("click", getDictionaryData);
+// Adicionar evento de clique ao botão de pesquisa
+btnSearch.addEventListener("click", getDictionaryData);
 
-// Chamar a função pela primeira vez para solicitar a palavra ao usuário e exibir os resultados no dicionário
+// Chamar a função pela primeira vez para exibir o dicionário vazio
 getDictionaryData();
