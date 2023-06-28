@@ -1,6 +1,9 @@
 // Acessar o elemento <div> onde o dicionário será exibido
 var dictionaryElement = document.getElementById("dictionary");
 
+// Acessar o botão "Escrever de Novo"
+var btnNewWord = document.getElementById("btnNewWord");
+
 // Função para fazer uma solicitação à API e exibir os resultados no dicionário
 function getDictionaryData() {
     var word = prompt("Digite uma palavra:"); // Solicita ao usuário uma palavra a ser pesquisada
@@ -37,5 +40,8 @@ function getDictionaryData() {
         });
 }
 
-// Chamar a função para solicitar a palavra ao usuário e exibir os resultados no dicionário
+// Adicionar evento de clique ao botão "Escrever de Novo"
+btnNewWord.addEventListener("click", getDictionaryData);
+
+// Chamar a função pela primeira vez para solicitar a palavra ao usuário e exibir os resultados no dicionário
 getDictionaryData();
