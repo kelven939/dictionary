@@ -25,7 +25,7 @@ h1 {
     width: 200px;
 }
 #word:focus {
-    outline: #333;
+    border: 1px solid #333;
 }
 
 #btnSearch {
