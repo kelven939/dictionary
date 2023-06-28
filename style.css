@@ -1,14 +1,63 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
 }
 
 h1 {
     text-align: center;
+    color: #333;
+}
+
+#wordInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#word {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#btnSearch {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btnSearch:hover {
+    background-color: #555;
 }
 
 #dictionary {
-    margin: 20px auto;
+    margin: 0 auto;
     width: 400px;
     padding: 10px;
+    background-color: #fff;
     border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#dictionary p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+
+#dictionary p:last-child {
+    border-bottom: none;
+}
+
+#dictionary p:hover {
+    background-color: #f5f5f5;
 }
