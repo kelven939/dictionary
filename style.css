@@ -9,6 +9,21 @@ h1 {
     text-align: center;
     color: #333;
 }
+.title-h1 {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }  
 
 #wordInput {
     display: flex;
