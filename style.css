@@ -9,6 +9,7 @@ h1 {
     text-align: center;
     /*color: #333; */
 }
+
 .title-h1 {
     background: linear-gradient(to right, #ff9966, #ff5e62);
     -webkit-background-clip: text;
@@ -17,9 +18,9 @@ h1 {
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px transparent;
-    text-shadow: 0px 0px 2px #ff9966, 0px 0px 4px #ff5e62;
+    text-shadow: 0px 0px 1px #ff9966, 0px 0px 2px #ff5e62;
     animation: gradientAnimation 3s ease-in-out infinite alternate;
-  }
+  }  
   
   @keyframes gradientAnimation {
     0% {
