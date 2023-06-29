@@ -13,7 +13,7 @@ h1 {
     background: linear-gradient(to right, #ff9966, #ff5e62);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientAnimation 1s ease-in-out infinite alternate;
+    animation: gradientAnimation 3s ease-in-out infinite alternate;
   }
   
   @keyframes gradientAnimation {
