@@ -1,3 +1,3 @@
 # dictionary
 # Dictionary in Html CSS & JS
-# with radiap api
+# with datamuse.com API.
