@@ -96,3 +96,9 @@ h1 {
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    #dictionary {
+        margin-left: 15px;
+    }
+  }  
