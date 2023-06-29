@@ -47,7 +47,7 @@ h1 {
     width: 200px;
 }
 #word:focus {
-    border: 1px solid rgb(86, 150, 245);
+    border: 2px solid rgb(86, 150, 245);
 }
 
 #btnSearch {
